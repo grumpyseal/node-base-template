@@ -1,1 +1,0 @@
-{"version":3,"sources":["../src/app.js"],"names":[],"mappings":";;;;;;;;AAGA,iBAAO,MAAP,CAAc,IAAd,EAAoB,YAAM;AACxB,UAAQ,GAAR,CAAY,oBAAZ,EAAkC,iBAAO,IAAP,EAAa,iBAAO,GAAP,CAA/C,CADwB;CAAN,CAApB","file":"app.js","sourcesContent":["\nimport server from './lib/server';\n\nserver.listen(8080, () => {\n  console.log('%s listening at %s', server.name, server.url);\n})\n"]}
