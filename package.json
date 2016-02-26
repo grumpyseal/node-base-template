@@ -5,10 +5,10 @@
   "main": "server.js",
   "scripts": {
     "lint": "./node_modules/.bin/eslint src",
-    "test": "./node_modules/.bin/mocha -R spec test/",
-    "start": "./node_modules/.bin/forever start --append -o ./forever.log -e ./forever.log lib/server.js",
-    "stop": "./node_modules/.bin/forever stop lib/server.js",
-    "build": "./node_modules/.bin/babel src --out-dir lib --source-maps"
+    "test": "./node_modules/.bin/mocha --compilers js:babel-core/register -R spec test/",
+    "start": "./node_modules/.bin/forever start --append -o ./forever.log -e ./forever.log dist/app.js",
+    "stop": "./node_modules/.bin/forever stop dist/app.js",
+    "build": "./node_modules/.bin/babel src --out-dir dist --source-maps"
   },
   "repository": {
     "type": "git",
